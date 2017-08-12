@@ -1,0 +1,94 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/st_hand_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="@dimen/tenDp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="@dimen/threeDp"
+    app:contentPadding="@dimen/fiveDp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingLeft="@dimen/fiveDp"
+        android:layout_marginTop="@dimen/threeDp"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:src="@drawable/image"
+            android:id="@+id/profile_image"
+
+
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="#8BC34A"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tenDp"
+            android:layout_marginLeft="@dimen/twentyfiveDp"
+            android:text="Handmade Plastic Gloves"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/title"
+            android:layout_toRightOf="@+id/profile_image"
+            android:textSize="@dimen/fifteenDp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/threeDp"
+            android:layout_marginLeft="@dimen/twentyfiveDp"
+            android:text="Open-source directional Graphic Interface"
+            android:textColor="@color/black"
+            android:id="@+id/description"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/profile_image"
+            android:textSize="@dimen/twelveDp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fiveDp"
+            android:layout_marginLeft="@dimen/twentyfiveDp"
+            android:text="Offer"
+            android:textColor="@color/black"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:id="@+id/type"
+            android:layout_below="@+id/description"
+            android:layout_toRightOf="@+id/profile_image"
+            android:textSize="@dimen/twelveDp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fiveDp"
+            android:layout_marginLeft="@dimen/twentyfiveDp"
+            android:text="2.6K"
+            android:textColor="@color/black"
+            android:id="@+id/view_count"
+            android:layout_below="@+id/type"
+            android:layout_toRightOf="@+id/profile_image"
+            android:textSize="@dimen/twelveDp"/>
+        <Button
+            android:layout_width="@dimen/eightyDp"
+            android:layout_height="@dimen/thirtyDp"
+            android:background="@drawable/button_shape"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/description"
+            android:id="@+id/select"
+            android:layout_marginTop="@dimen/tenDp"
+            android:text="Select"/>
+
+
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
